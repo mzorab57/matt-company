@@ -84,7 +84,7 @@ const Skills = () => {
               <img
                 src={image}
                 alt="Skills"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover brightness-75"
               />
             </div>
           </div>

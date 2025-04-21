@@ -1,0 +1,32 @@
+{
+  "divisions": [
+    {
+      "id": 1,
+      "name": "Matt School",
+      "title": "First Architecture School in Iraq",
+      "description": "The part of Matt company, the first architecture school in Iraq, It is an educational and scientific department of architecture Working to create a healthy environment in a cultured and developed society through providing courses on the principles and components of design, children's architecture courses, mastering design programs, working on the understanding of society to create a peaceful life.",
+      "video": "/assets/videos/mattschoolvideo1.MP4",
+      "icon": "/assets/images/mattGroup/school-icon.svg",
+      "features": [
+        "Architecture Courses",
+        "Design Principles",
+        "Children's Programs",
+        "Professional Training"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Matt Furnishing",
+      "title": "Premium Home Furnishing Solutions",
+      "description": "The part of Mat Company that works on the supply and manufacture of household appliances by importing from abroad and supplying domestically. Through the experienced and professional staff of the company. Matt Furnishing works to create a comfortable and convenient life for families by building their home with attractive quality and design.",
+      "video": "/assets/videos/mattFurnishing3.MP4",
+      "icon": "/assets/images/mattGroup/furnishing-icon.svg",
+      "features": [
+        "Quality Imports",
+        "Professional Staff",
+        "Custom Solutions",
+        "Modern Designs"
+      ]
+    }
+  ]
+}
