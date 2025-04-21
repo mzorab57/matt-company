@@ -7,9 +7,16 @@ const AboutUs = () => {
   
   return (
     <section className="About Us relative">
+        {/* Left Tower */}
+        <img 
+          src="/assets/images/svgImage/tower.svg" 
+          alt="Tower Left" 
+          className="absolute  -translate-x-28 top-1/2 -translate-y-1/2 h-screen opacity-10 z-0 animate-pulse"
+        />
+        
         {/* Background Image */}
         <div 
-          className="absolute bottom-0 right-0  w-[40%] h-[80%]  z-0"
+          className="absolute hidden xl:block bottom-0 right-0 w-[40%] h-[80%] z-0 animate-pulse"
           style={{
             backgroundImage: 'url(https://tawelaceramic.com/assets/images/aboutBg/about_pat.png)',
             backgroundSize: 'cover',
@@ -60,7 +67,7 @@ const AboutUs = () => {
           {/* Image Section */}
           <div className="">
             <img 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover brightness-75"
               src={images.mainImage}
               alt="About Matt Company"
               data-aos="fade-left"

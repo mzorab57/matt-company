@@ -27,6 +27,20 @@
         "Custom Solutions",
         "Modern Designs"
       ]
+    },
+    {
+      "id": 3,
+      "name": "Matt Models",
+      "title": "Architectural Model Specialists",
+      "description": "Matt Models part of Matt company was established in 2022 as a specialized architectural model building company with technical and creative expertise to meet the varying needs of architects, property developers, and various high-profile establishments.",
+      "video": "/assets/videos/mattModel.mp4",
+      "icon": "/assets/images/mattGroup/models-icon.svg",
+      "features": [
+        "Architectural Models",
+        "Technical Expertise",
+        "Creative Solutions",
+        "Professional Service"
+      ]
     }
   ]
 }
