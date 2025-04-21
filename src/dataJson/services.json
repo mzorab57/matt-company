@@ -1,0 +1,56 @@
+{
+  "sectionTitle": {
+    "label": "OUR SERVICES",
+    "heading": "What Can We Offer"
+  },
+  "services": [
+    {
+      "id": 1,
+      "icon": "/assets/images/serviceIcon/iconbox1.png",
+      "bgIcon": "/assets/images/serviceIcon/bg-iconbox1-hover.jpg",
+      "title": "Architectural Design",
+      "description": "Creating innovative and functional architectural designs that bring your vision to life",
+      "link": "/services/design-planning"
+    },
+    {
+      "id": 2,
+      "icon": "/assets/images/serviceIcon/iconbox2.png",
+      "bgIcon": "/assets/images/serviceIcon/bg-iconbox2-hover.jpg",
+      "title": "Mechanical And Electrical",
+      "description": "Comprehensive MEP solutions ensuring efficient and sustainable building systems",
+      "link": "/services/custom-solutions"
+    },
+    {
+      "id": 3,
+      "icon": "/assets/images/serviceIcon/iconbox3.png",
+      "bgIcon": "/assets/images/serviceIcon/bg-iconbox3-hover.jpg",
+      "title": "Structural Engineering",
+      "description": "Expert structural analysis and design for safe and durable construction projects",
+      "link": "/services/furniture-decor"
+    },
+    {
+      "id": 4,
+      "icon": "/assets/images/serviceIcon/iconbox4.png",
+      "bgIcon": "/assets/images/serviceIcon/bg-iconbox4-hover.jpg",
+      "title": "Civil Engineering",
+      "description": "Professional civil engineering services for infrastructure and construction projects",
+      "link": "/services/interior-design"
+    },
+    {
+      "id": 5,
+      "icon": "/assets/images/serviceIcon/iconbox5.png",
+      "bgIcon": "/assets/images/serviceIcon/bg-iconbox5-hover.jpg",
+      "title": "Construction Management",
+      "description": "Efficient project management ensuring timely delivery and quality construction",
+      "link": "/services/renovation"
+    },
+    {
+      "id": 6,
+      "icon": "/assets/images/serviceIcon/iconbox6.png",
+      "bgIcon": "/assets/images/serviceIcon/bg-iconbox6-hover.jpg",
+      "title": "Infrastructure Development",
+      "description": "Comprehensive infrastructure solutions for sustainable urban development",
+      "link": "/services/construction"
+    }
+  ]
+}

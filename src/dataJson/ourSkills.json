@@ -1,0 +1,25 @@
+{
+  "sectionTitle": {
+    "label": "our skills",
+    "heading": "The Core Company Values"
+  },
+  "description": "We are constantly growing, learning, and improving and our partners are steadily increasing. 200 projects is a sizable number",
+  "skills": [
+    {
+      "id": 1,
+      "name": "INTERIOR SKETCHING",
+      "percentage": 65
+    },
+    {
+      "id": 2,
+      "name": "3D MODELING",
+      "percentage": 85
+    },
+    {
+      "id": 3,
+      "name": "2D PLANNING",
+      "percentage": 55
+    }
+  ],
+  "image": "/assets/images/ourSkills/image1.jpg"
+}

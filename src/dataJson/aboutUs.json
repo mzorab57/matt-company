@@ -1,0 +1,10 @@
+{
+  "mainContent": {
+    "title": "About Matt Company",
+    "description": "Matt company is a engineering consulting and general trading company (Ltd), It is based in Sulaimani Iraq, Established in 2020, with the mission of providing sustainable and innovative architectural design and construction solutions to customers and the community, the company has become the partner of choice by customers It works to promote architecture and create the culture of a developed society.",
+    "readMore": "Read more"
+  },
+  "images": {
+    "mainImage": "/assets/images/aboutSection/image.webp"
+  }
+}

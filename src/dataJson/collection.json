@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Stylish Family Appartment",
+      "category": "Interior",
+      "image": "https://templates.thememodern.com/theratio/images/projects-grid/project-metro1.jpg",
+      "link": "/portfolio/stylish-family-apartment",
+      "size": "2x"
+    },
+    {
+      "id": 7,
+      "title": "Stylish Family Appartment",
+      "category": "Interior",
+      "image": "https://templates.thememodern.com/theratio/images/projects-grid/project-metro1.jpg",
+      "link": "/portfolio/stylish-family-apartment",
+      "size": "2x"
+    },
+    {
+      "id": 2,
+      "title": "Minimal Guests House",
+      "category": ["Decor", "Interior"],
+      "image": "https://templates.thememodern.com/theratio/images/projects-grid/project2.jpg",
+      "link": "/portfolio/minimal-guests-house"
+    },
+    {
+      "id": 3,
+      "title": "Art Family Residence",
+      "category": "Architecture",
+      "image": "https://templates.thememodern.com/theratio/images/projects-grid/project3.jpg",
+      "link": "/portfolio/art-family-residence"
+    },
+    {
+      "id": 4,
+      "title": "Private House in Spain",
+      "category": "Furniture",
+      "image": "https://templates.thememodern.com/theratio/images/projects-grid/project4.jpg",
+      "link": "/portfolio/private-house-spain"
+    },
+    {
+      "id": 5,
+      "title": "Modern Villa in Belgium",
+      "category": "Interior",
+      "image": "https://templates.thememodern.com/theratio/images/projects-grid/project5.jpg",
+      "link": "/portfolio/modern-villa-belgium"
+    }
+  ]
+}

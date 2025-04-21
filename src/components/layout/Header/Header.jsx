@@ -13,8 +13,8 @@ const Header = () => {
   }, []);
   return (
     <div
-      className={`fixed w-full z-50  transition-all duration-300 ${
-        isSticky ? "shadow-md bg-black/50 text-white" : "bg-transparent"
+      className={`fixed w-full z-50  transition-all duration-300 border-b-2 text-white border-b-gray-500/40 ${
+        isSticky ? "shadow-md bg-black/50 " : "bg-transparent"
       }`}
     >
       <Navbar />
