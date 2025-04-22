@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import servicesData from '../../dataJson/services.json';
+import HeaderText from '../ui/HeaderText';
 
 const OurServices = () => {
   const { sectionTitle, services } = servicesData;
@@ -13,9 +14,9 @@ const OurServices = () => {
           <span className="text-gray-custom uppercase tracking-wider text-sm mb-3 block">
             [ {sectionTitle.label} ]
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            {sectionTitle.heading}
-          </h2>
+          
+          <HeaderText header={sectionTitle.heading} />
+         
         </div>
 
         {/* Services Grid */}

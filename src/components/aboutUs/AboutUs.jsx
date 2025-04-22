@@ -6,12 +6,12 @@ const AboutUs = () => {
   const { mainContent, images } = aboutData;
   
   return (
-    <section className="About Us relative bg-black/90">
+    <section className="About Us relative bg-black/90 overflow-hidden">
         {/* Left Tower */}
         <img 
           src="/assets/images/svgImage/tower.svg" 
           alt="Tower Left" 
-          className="absolute  -translate-x-28 top-1/2 -translate-y-1/2 h-screen opacity-10 z-0 lg:animate-pulse"
+          className="absolute  -translate-x-32 top-1/2 -translate-y-1/2 h-screen opacity-10 z-0 lg:animate-pulse"
         />
         
         {/* Background Image */}
@@ -67,7 +67,7 @@ const AboutUs = () => {
           {/* Image Section */}
           <div className="">
             <img 
-              className="w-full h-auto object-cover brightness-75"
+              className="w-full h-auto object-cover brightness-75 translate-x-10"
               src={images.mainImage}
               alt="About Matt Company"
               data-aos="fade-left"

@@ -13,7 +13,7 @@ import Service from "../pages/Service";
 import OurSkills from "../pages/OurSkills";
 import Experience from "../pages/pages/Experience";
 import OurCollection from "../pages/pages/OurCollection";
-import Company from "../pages/Company";
+c
 import AboutUs from "../components/aboutUs/AboutUs";
 
 const ErrorElement = () => (

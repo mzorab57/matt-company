@@ -1,20 +1,18 @@
 {
-  "logo": "/assets/images/logo-footer.svg",
-  "description": "We provides a full range of interior design, architectural design.",
+  "logo": "/matt-logo.webp",
+  "description": "Matt Company, established in 2020, is a prominent Design and Engineering Consultancy and General Contracts firm.",
   "social": [
-    { "id": 1, "icon": "facebook", "link": "http://facebook.com" },
-    { "id": 2, "icon": "twitter", "link": "http://twitter.com" },
-    { "id": 3, "icon": "linkedin", "link": "http://linkedin.com" },
-    { "id": 4, "icon": "instagram", "link": "http://instagram.com" }
+    { "id": 1, "icon": "facebook", "link": "https://www.facebook.com/Matt-Company" },
+    { "id": 2, "icon": "instagram", "link": "https://www.instagram.com/matt_company" }
   ],
   "contacts": {
-    "address": "411 University St, Seattle, USA",
-    "email": "theratio_interior@mail.com",
-    "phone": "+1 800 456 789 123"
+    "address": "Ashty street, As Sulaymaniyah, Iraq",
+    "email": "info@mattiraq.com",
+    "phone": "+964 772 528 6029"
   },
   "latestProjects": [
-    { "id": 1, "title": "Stylish Family Appartment", "link": "#" },
-    { "id": 2, "title": "Modern Villa in Belgium", "link": "#" },
-    { "id": 3, "title": "Private House in Spain", "link": "#" }
+    { "id": 1, "title": "Matt School", "link": "#" },
+    { "id": 2, "title": "Matt Furnishing", "link": "#" },
+    { "id": 3, "title": "Matt Models", "link": "#" }
   ]
 }

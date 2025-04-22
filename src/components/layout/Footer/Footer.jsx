@@ -1,24 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import footerData from '../../../dataJson/footer.json';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaMapMarkerAlt, FaEnvelope, FaPhone, FaPaperPlane } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
   const socialIcons = {
     facebook: FaFacebookF,
-    twitter: FaTwitter,
-    linkedin: FaLinkedinIn,
     instagram: FaInstagram
   };
 
   return (
-    <footer className="bg-black/90 text-gray-300 py-44">
+    <footer className="bg-black/90 text-gray-300 py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>
-            <img src={footerData.logo} alt="Logo" className="h-12 mb-6" />
-            <p className="mb-6">{footerData.description}</p>
+            <img src={footerData.logo} alt="Matt Company" className="w-44 h-40 mb-6" />
+            <p className="mb-8 text-lg leading-relaxed">{footerData.description}</p>
             <div className="flex space-x-4">
               {footerData.social.map(item => {
                 const Icon = socialIcons[item.icon];
@@ -28,9 +26,9 @@ const Footer = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-primary hover:border-primary transition-colors"
+                    className="w-12 h-12 rounded-full border-2 border-gray-600 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300 group"
                   >
-                    <Icon className="w-4 h-4" />
+                    <Icon className="w-5 h-5 group-hover:text-white" />
                   </a>
                 );
               })}
@@ -39,58 +37,46 @@ const Footer = () => {
 
           {/* Contacts */}
           <div>
-            <h6 className="text-white text-lg font-semibold mb-6">Contacts</h6>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="w-5 h-5 mt-1 text-primary" />
-                <span>{footerData.contacts.address}</span>
+            <h6 className="text-white text-2xl font-bold mb-8">Contact Info</h6>
+            <ul className="space-y-6">
+              <li className="flex items-start space-x-4">
+                <FaMapMarkerAlt className="w-6 h-6 mt-1 text-primary" />
+                <span className="text-lg">{footerData.contacts.address}</span>
               </li>
-              <li className="flex items-center space-x-3">
-                <FaEnvelope className="w-5 h-5 text-primary" />
-                <span>{footerData.contacts.email}</span>
+              <li className="flex items-center space-x-4">
+                <FaEnvelope className="w-6 h-6 text-primary" />
+                <a href={`mailto:${footerData.contacts.email}`} className="text-lg hover:text-primary transition-colors">
+                  {footerData.contacts.email}
+                </a>
               </li>
-              <li className="flex items-center space-x-3">
-                <FaPhone className="w-5 h-5 text-primary" />
-                <span>{footerData.contacts.phone}</span>
+              <li className="flex items-center space-x-4">
+                <FaPhone className="w-6 h-6 text-primary" />
+                <a href={`tel:${footerData.contacts.phone.replace(/\s/g, '')}`} className="text-lg hover:text-primary transition-colors">
+                  {footerData.contacts.phone}
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Latest Projects */}
+          {/* Our Services */}
           <div>
-            <h6 className="text-white text-lg font-semibold mb-6">Latest Projects</h6>
-            <ul className="space-y-3">
+            <h6 className="text-white text-2xl font-bold mb-8">Our Services</h6>
+            <ul className="space-y-4">
               {footerData.latestProjects.map(project => (
-                <li key={project.id}>
-                  <Link to={project.link} className="hover:text-primary transition-colors">
-                    {project.title}
+                <li key={project.id} className="text-lg">
+                  <Link to={project.link} className="hover:text-primary transition-colors duration-300 flex items-center space-x-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    <span>{project.title}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+        </div>
 
-          {/* Subscribe */}
-          <div>
-            <h6 className="text-white text-lg font-semibold mb-6">Subscribe</h6>
-            <form className="mb-4">
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder="YOUR EMAIL"
-                  className="w-full bg-transparent border border-gray-600 rounded-full py-3 px-5 focus:outline-none focus:border-primary"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:bg-primary-dark transition-colors"
-                >
-                  <FaPaperPlane className="w-4 h-4 text-white" />
-                </button>
-              </div>
-            </form>
-            <p>Follow our newsletter to stay updated about agency.</p>
-          </div>
+        {/* Copyright */}
+        <div className="mt-16 pt-8 border-t border-gray-800 text-center">
+          <p className="text-gray-400">© {new Date().getFullYear()} Matt Company. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
