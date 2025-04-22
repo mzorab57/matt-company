@@ -20,11 +20,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4  ">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+            <img src="/matt-logo.webp" alt="Logo" className="w-20   -translate-y-" />
           </Link>
 
           {/* Desktop Navigation */}

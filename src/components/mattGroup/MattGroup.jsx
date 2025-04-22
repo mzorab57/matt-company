@@ -14,12 +14,12 @@ const MattGroup = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-bl from-white/15  to-transparent font-raleway overflow-hidden">
+    <section className="py-20 bg-gradient-to-bl from-white/15   to-transparent font-raleway overflow-hidden">
       {/* Left Tower */}
       <img 
         src="/assets/images/svgImage/tower.svg" 
         alt="Tower Left" 
-        className="absolute left-0  h-[50%] opacity-10"
+        className="absolute left-0  h-[50%]  opacity-20"
         style={{ transform: `translate(0, ${scrollY * 0.2}px)` }}
       />
       
@@ -27,7 +27,7 @@ const MattGroup = () => {
       <img 
         src="/assets/images/svgImage/tower.svg" 
         alt="Tower Right" 
-        className="absolute right-0  h-[50%] opacity-10"
+        className="absolute right-0  h-[50%] opacity-20"
         style={{ transform: `translate(0, ${scrollY * 0.2}px)` }}
       />
       
@@ -42,7 +42,7 @@ const MattGroup = () => {
           }`}>
             {/* Video Section */}
             <div className="lg:w-1/2 relative  ">
-              <div className="relative overflow-hidden border border-gray-500 ">
+              <div className="relative overflow-hidden border-4 border-white/20  ">
                 <video 
                   className=" max-w-full w-screen h-[400px] object-cover "
                   autoPlay

@@ -14,6 +14,7 @@ import OurSkills from "../pages/OurSkills";
 import Experience from "../pages/pages/Experience";
 import OurCollection from "../pages/pages/OurCollection";
 import Company from "../pages/Company";
+import AboutUs from "../components/aboutUs/AboutUs";
 
 const ErrorElement = () => (
   <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -35,9 +36,17 @@ const ErrorElement = () => (
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main /> }>
-        <Route index element={<><Home /> <About /> <Service /> <OurSkills /> <Experience /><Company /> <OurCollection />  </>} />
-        {/* <Route  element={} /> */}
+      <Route path="/" element={<Main />}>
+        <Route
+          index
+          element={
+            <>
+              <Home /> <AboutUs /> <Service /> <OurSkills /> <Experience />
+              <Company /> <OurCollection />
+            </>
+          }
+        />
+        <Route path="about" element={<About />} />
         <Route path="pages">
           <Route path="mattschool" element={<MattSchool />} />
           <Route path="mattfurnishing" element={<MattFurnishing />} />

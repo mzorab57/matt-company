@@ -1,0 +1,72 @@
+{
+  "whoWeAre": {
+    "title": "Who are we?",
+    "description": "Matt Company, established in 2020, is a prominent Design and Engineering Consultancy and General Contracts firm. We are dedicated to delivering cutting-edge and environmentally friendly solutions across various industries. With a team of highly efficient professionals and a proven history of successful projects, Matt Company has been instrumental in constructing exceptional projects and fostering strong."
+  },
+  "whyChooseUs": {
+    "title": "Why you Choose us?",
+    "description": "At Matt Company, we consistently strive to surpass our own boundaries with every project we undertake. When you engage our services, you can rest assured that our professional architectural designs and construction expertise will meet your expectations, all at a competitive and worthwhile price. The exceptional quality of our work, combined with our unwavering commitment to customer satisfaction, ensures that once you experience the services provided by Matt Company, your decision to choose us again becomes unequivocal."
+  },
+  "goals": {
+    "title": "Our Goal",
+    "items": [
+      {
+        "id": 1,
+        "title": "Client Satisfaction",
+        "description": "Provide a comfortable lifestyle by building an environmentally friendly and aesthetically distinctive building. This approach makes the most of the opportunities of each project to provide a truly unique product for each customer.",
+        "icon": "/assets/images/bgHome/BGG1.webp"
+      },
+      {
+        "id": 2,
+        "title": "Innovation and Creativity",
+        "description": "We have become an integral player in the Iraqi market through our quality and partnership approach. We work to provide our customers with the highest quality design and construction solutions possible.",
+        "icon": "/assets/images/bgHome/BGG1.webp"
+      },
+      {
+        "id": 3,
+        "title": "Growth and Expansion",
+        "description": "Our goal is not only to provide immediate sustainable solutions, but we strive to build long-term relationships with our customers and partners in order to build a better future for all of us",
+         "icon": "/assets/images/bgHome/BGG1.webp"
+      }
+    ]
+  },
+  "divisions": {
+    "title": "Our Divisions",
+    "items": [
+      {
+        "id": 1,
+        "name": "Matt Furnishing",
+        "description": "The part of Mat Company that works on the supply and manufacture of household appliances by importing from abroad and supplying domestically. Through the experienced and professional staff of the company. Matt Furnishing works to create a comfortable and convenient life for families by building their home with attractive quality and design.",
+         "icon": "/assets/images/bgHome/BGG1.webp"
+      },
+      {
+        "id": 2,
+        "name": "Matt School",
+        "description": "The part of Matt company, the first architecture school in Iraq, It is an educational and scientific department of architecture Working to create a healthy environment in a cultured and developed society through providing courses on the principles and components of design, children's architecture courses, mastering design programs, working on the understanding of society to create a peaceful life.",
+         "icon": "/assets/images/bgHome/BGG1.webp"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "id": 1,
+      "number": "180+",
+      "label": "Projects Completed"
+    },
+    {
+      "id": 2,
+      "number": "95%",
+      "label": "Client Satisfaction"
+    },
+    {
+      "id": 3,
+      "number": "10+",
+      "label": "Years Experience"
+    },
+    {
+      "id": 4,
+      "number": "50+",
+      "label": "Professional Team"
+    }
+  ]
+}

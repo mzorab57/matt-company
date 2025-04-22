@@ -6,12 +6,12 @@ const AboutUs = () => {
   const { mainContent, images } = aboutData;
   
   return (
-    <section className="About Us relative">
+    <section className="About Us relative bg-black/90">
         {/* Left Tower */}
         <img 
           src="/assets/images/svgImage/tower.svg" 
           alt="Tower Left" 
-          className="absolute  -translate-x-28 top-1/2 -translate-y-1/2 h-screen opacity-10 z-0 animate-pulse"
+          className="absolute  -translate-x-28 top-1/2 -translate-y-1/2 h-screen opacity-10 z-0 lg:animate-pulse"
         />
         
         {/* Background Image */}

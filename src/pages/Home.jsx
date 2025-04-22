@@ -15,19 +15,19 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden brightness-90">
+    <div className="relative h-screen overflow-hidden opacity-90 brightne">
       {/* Animated Lines */}
       <div className="absolute inset-0 flex justify-around z-10">
         {[...Array(5)].map((_, index) => (
           <div key={index} className="relative">
             {/* Static Gray Line */}
-            <div className="absolute w-[3px] h-full bg-gray-500 opacity-40" />
+            <div className="absolute w-[3px] h-full bg-gray-500 opacity-30 " />
             
             {/* Animated vpribg-primary */}
             <div
               className="absolute w-[5px] bg-primary/80  shadow-lg shadow-pribg-primary/50"
               style={{
-                animation: `lineMove 12s linear infinite ${index * 1}s`,
+                animation: `lineMove 13s linear infinite ${index * 1}s`,
                 transformOrigin: 'top',
                 position: 'absolute',
                 top: '0',

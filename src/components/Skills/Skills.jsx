@@ -62,9 +62,9 @@ const Skills = () => {
                     <div className="overflow-hidden mb-2">
                       <span className="float-left font-sans capitalize">{skill.name}</span>
                     </div>
-                    <div className="relative h-1 bg-[#f6f6f6] rounded-sm">
+                    <div className="relative h-1 bg-white/15 rounded-sm">
                       <div
-                        className="h-full bg-gray-600 font-normal  transition-all duration-500 relative"
+                        className="h-full bg-gray-500 font-normal  transition-all duration-500 relative"
                         style={{ width: `${skill.percentage}%` }}
                       >
                         <span className="absolute font-sans -right-4 -top-6 text-sm">
@@ -84,7 +84,7 @@ const Skills = () => {
               <img
                 src={image}
                 alt="Skills"
-                className="w-full h-full object-cover brightness-75"
+                className="w-full h-full object-cover brightness-75 border-4 border-white/20"
               />
             </div>
           </div>

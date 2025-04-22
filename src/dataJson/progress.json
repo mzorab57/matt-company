@@ -1,0 +1,32 @@
+{
+  "circles": [
+    {
+      "id": 1,
+      "title": "Interior Sketch",
+      "percent": 75,
+      "description": "All kinds of buildings in chematic or working design",
+      "color": "#939393"
+    },
+    {
+      "id": 2,
+      "title": "3D Modeling",
+      "percent": 50,
+      "description": "Studio provides a full range of 3D interior modeling",
+      "color": "#939393"
+    },
+    {
+      "id": 3,
+      "title": "Room Measurement",
+      "percent": 75,
+      "description": "Development of perfect design of the project",
+      "color": "#939393"
+    },
+    {
+      "id": 4,
+      "title": "2D Planning",
+      "percent": 85,
+      "description": "We provide 2D planning for great visualization",
+      "color": "#939393"
+    }
+  ]
+}
