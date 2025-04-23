@@ -13,8 +13,8 @@ import Service from "../pages/Service";
 import OurSkills from "../pages/OurSkills";
 import Experience from "../pages/pages/Experience";
 import OurCollection from "../pages/pages/OurCollection";
-c
 import AboutUs from "../components/aboutUs/AboutUs";
+import Company from "../pages/Company";
 
 const ErrorElement = () => (
   <div className="min-h-screen flex items-center justify-center bg-gray-100">

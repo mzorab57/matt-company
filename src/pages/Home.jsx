@@ -73,7 +73,7 @@ const Home = () => {
                 </h2>
                 <Link
                   to="/about"
-                  className="inline-block px-8 py-3 bg-primary/70 text-white font-medium border border-gray-400  hover:bg-primary transition-colors"
+                  className="inline-block px-8 py-3 bg-black/70 text-white tracking-wider border border-gray-400  hover:bg-black/90 transition-colors"
                 >
                   Learn More
                 </Link>

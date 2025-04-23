@@ -1,0 +1,66 @@
+{
+  "header": {
+    "title": "Matt School",
+    "description": "The first architecture school in Iraq, providing professional courses in architectural design, modeling, and advanced software training."
+  },
+  "videos": {
+    "mattSchool1": "/assets/videos/mattSchool/mattschoolvideo1.MP4",
+    "mattSchool2": "/assets/videos/mattSchool/mattschoolvideo2.MP4",
+    "mattSchool3": "/assets/videos/mattSchool/mattschoolvideo3.MP4",
+    "mattSchool4": "/assets/videos/mattSchool/mattschoolvideo4.MP4",
+    "mattSchool5": "/assets/videos/mattSchool/mattschoolvideo5.MP4",
+    "mattSchool6": "/assets/videos/mattSchool/mattschoolvideo6.MP4",
+    "mattSchool7": "/assets/videos/mattSchool/mattschoolvideo7.MP4",
+    "mattSchool8": "/assets/videos/mattSchool/mattschoolvideo8.MP4"
+
+  },
+  "features": [
+    {
+      "id": 1,
+      "icon": "graduation",
+      "title": "Professional Training",
+      "description": "Expert instructors with years of industry experience in architectural design and modeling"
+    },
+    {
+      "id": 2,
+      "icon": "laptop",
+      "title": "Modern Software",
+      "description": "Learn industry-standard software including AutoCAD, Revit, 3ds Max, and more"
+    },
+    {
+      "id": 3,
+      "icon": "users",
+      "title": "Small Groups",
+      "description": "Personalized attention with maximum 10 students per class for optimal learning"
+    },
+    {
+      "id": 4,
+      "icon": "clock",
+      "title": "Flexible Schedule",
+      "description": "Morning and evening classes available to suit your schedule"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Architectural Design Basics",
+      "duration": "3 months",
+      "level": "Beginner",
+      "description": "Learn fundamental principles of architectural design and drafting"
+    },
+    {
+      "id": 2,
+      "title": "3D Modeling Advanced",
+      "duration": "4 months",
+      "level": "Intermediate",
+      "description": "Master 3D modeling techniques using industry-standard software"
+    },
+    {
+      "id": 3,
+      "title": "Interior Design",
+      "duration": "3 months",
+      "level": "All Levels",
+      "description": "Comprehensive interior design principles and practices"
+    }
+  ]
+}
