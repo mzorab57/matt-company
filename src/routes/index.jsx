@@ -15,6 +15,7 @@ import Experience from "../pages/pages/Experience";
 import OurCollection from "../pages/pages/OurCollection";
 import AboutUs from "../components/aboutUs/AboutUs";
 import Company from "../pages/Company";
+import Portfolio from "../pages/Portfolio";
 
 const ErrorElement = () => (
   <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -47,11 +48,12 @@ const Router = () => {
           }
         />
         <Route path="about" element={<About />} />
-        <Route path="pages">
-          <Route path="mattschool" element={<MattSchool />} />
-          <Route path="mattfurnishing" element={<MattFurnishing />} />
-          <Route path="mattmodel" element={<MattModel />} />
-        </Route>
+          <Route path="portfolio" element={<Portfolio />} /> {/* Move outside mattcompany */}
+          <Route path="mattcompany">
+            <Route path="mattschool" element={<MattSchool />} />
+            <Route path="mattfurnishing" element={<MattFurnishing />} />
+            <Route path="mattmodel" element={<MattModel />} />
+          </Route>
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="*" element={<ErrorElement />} />

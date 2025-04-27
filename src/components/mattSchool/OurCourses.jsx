@@ -19,10 +19,9 @@ const OurCourses = () => {
     <section className="py-20 bg-black font-raleway">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-start mb-16 ">
           <HeaderText header={mattSchoolData.header.title} />
-       
-          <p className="text-gray-400 text-xl max-w-2xl mx-auto">{mattSchoolData.header.description}</p>
+          <p className="text-gray-400 text-2xl max-w-2xl ">{mattSchoolData.header.description}</p>
         </div>
 
         {/* Video Gallery */}
@@ -96,7 +95,7 @@ const OurCourses = () => {
                 <div className="bg-gradient-to-br from-primary/20 to-primary/10 rounded p-4 mb-6 w-fit">
                   <Icon className="text-primary w-12 h-12 transform hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-4 bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">{feature.title}</h4>
+                <h4 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">{feature.title}</h4>
                 <p className="text-gray-400 leading-relaxed">{feature.description}</p>
               </div>
             );
@@ -110,7 +109,7 @@ const OurCourses = () => {
             {mattSchoolData.courses.map(course => (
               <div key={course.id} className="bg-gradient-to-br from-white/10 to-white/5 rounded p-8 hover:bg-white/15 transition-all duration-500 group backdrop-blur-sm border border-white/10 hover:shadow-2xl hover:shadow-primary/20">
                 
-                <h4 className="text-2xl font-bold text-white mb-6 bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">{course.title}</h4>
+                <h4 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">{course.title}</h4>
                 <div className="flex items-center space-x-6 mb-6 text-gray-400">
                   <div className="flex items-center bg-white/5 px-4 py-2 rounded-full">
                     <FaCalendarAlt className="w-5 h-5 mr-2 text-primary" />

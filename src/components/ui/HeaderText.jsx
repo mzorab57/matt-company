@@ -4,7 +4,7 @@ const HeaderText = ({header}) => {
   return (
     <div>
        <h1 
-              className="text-3xl  sm:text-3xl lg:text-5xl font-bold text-black"
+              className="text-3xl  sm:text-3xl lg:text-6xl font-bold text-black"
               data-aos="fade-up"
               data-aos-duration="600"
               style={{

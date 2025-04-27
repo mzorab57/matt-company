@@ -10,5 +10,80 @@
       "Periodic site review and timelines",
       "Design development and strategy"
     ]
+  },
+  "body": {
+    "mainTitle": "WHAT WE DO",
+    "sections": [
+      {
+        "title": "Model Logistics",
+        "description": "Our design team works closely with architects and designers at early design stages to ensure that all aspects of a project are well studied and on track for a masterpiece. The logistics team ensures that there is a smooth flow of the project right from the commencement of the project till the delivery completion."
+      },
+      {
+        "title": "Model Making",
+        "description": "Our architectural models make a remarkable impression. Our experienced team has vast knowledge and an eye for choosing the perfect size, scale, colour combinations and style of model to complement the project design. With our innovative proficiency, skill and attention to fine details, we assist you to present your project as a true spectacle."
+      },
+      {
+        "title": "Model Maintenance",
+        "description": "Matt models has a specialized team to manage model packing, moving, and handling. Our experience lies in the detailed manner in which we handle our models. We also do a routine model maintenance if needed for our projects as per the clients needs and requirements."
+      }
+    ],
+    "intro": "Matt Models is a pioneer in the Architectural Model Building industry. With 3 years of expertise in the field, we deliver high quality models with the best standards across IRAQ. With offices in KURDISTAN and SULAYMANIAH, our teams have the capability to deliver models."
+  },
+  "gallery": {
+    "title": "Our Projects Gallery",
+    "description": "Explore our architectural model projects and creative designs",
+    "images": [
+      {
+        "id": 1,
+        "src": "/assets/images/mattModel/model1.webp",
+        "title": "Modern Residential Tower"
+      },
+     
+  
+      {
+        "id": 4,
+        "src": "/assets/images/mattModel/model9.webp",
+        "title": "Luxury Apartments"
+      },
+      {
+        "id": 5,
+        "src": "/assets/images/mattModel/model5.webp",
+        "title": "Industrial Tower"
+      },
+      
+      {
+        "id": 3,
+        "src": "/assets/images/mattModel/model3.webp",
+        "title": "Commercial Complex"
+      },
+      
+      {
+        "id": 6,
+        "src": "/assets/images/mattModel/model8.webp",
+        "title": "Office Building"
+      },
+      {
+        "id": 2,
+        "src": "/assets/images/mattModel/model2.webp",
+        "title": "Commercial Complex"
+      },
+      {
+        "id": 7,
+        "src": "/assets/images/mattModel/model7.webp",
+        "title": "Office Building"
+      },
+      {
+        "id": 8,
+        "src": "/assets/images/mattModel/model10.webp",
+        "title": "Modern Residential Tower"
+      },
+      {
+        "id": 9,
+        "src": "/assets/images/mattModel/model11.webp",
+        "title": "Modern Residential Tower"
+      }
+
+      
+    ]
   }
 }

@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative group">
+    <nav className="relative ">
       <div className="container mx-auto px-4  ">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -28,9 +28,10 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block">
+          <nav className="hidden  md:block">
             <ul className="flex space-x-4">
               {navitemlist.map((item, index) => (
+                
                 <MenuItem key={index} item={item} />
               ))}
             </ul>

@@ -94,7 +94,7 @@ const OurProducts = () => {
                 <div className="bg-gradient-to-br from-datext-danger/20 to-datext-danger/10 rounded p-4 mb-6 w-fit">
                   <Icon className="text-danger w-12 h-12 transform hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h4 className="text-2xl font-bold text-white mb-4 bg-gradient-to-r from-danger to-white bg-clip-text text-transparent">{feature.title}</h4>
+                <h4 className="text-2xl font-bold mb-4 bg-gradient-to-r from-danger to-white bg-clip-text text-transparent">{feature.title}</h4>
                 <p className="text-gray-400 leading-relaxed">{feature.description}</p>
               </div>
             );
@@ -108,7 +108,7 @@ const OurProducts = () => {
             {mattFurnishingData.products.map(course => (
               <div key={course.id} className="bg-gradient-to-br from-white/10 to-white/5 rounded p-8 hover:bg-white/15 transition-all duration-500 group backdrop-blur-sm border border-white/10 hover:shadow-2xl hover:shadow-danger/20">
                 
-                <h4 className="text-2xl font-bold text-white mb-6 bg-gradient-to-r from-danger to-white bg-clip-text text-transparent">{course.title}</h4>
+                <h4 className="text-2xl font-bold mb-4 bg-gradient-to-r from-danger to-white bg-clip-text text-transparent">{course.title}</h4>
                 <div className="flex items-center space-x-6 mb-6 text-gray-400">
                   <div className="flex items-center bg-white/5 px-4 py-2 rounded-full">
                     <FaCalendarAlt className="w-5 h-5 mr-2 text-danger" />

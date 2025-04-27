@@ -1,0 +1,59 @@
+{
+  "header": {
+    "title": "Our Portfolio",
+    "description": "Explore our diverse collection of architectural projects",
+    "backgroundImage": "/assets/images/portfolio/header-bg.webp"
+  },
+  "categories": [
+    {
+      "id": "exterior",
+      "title": "Exterior Design",
+      "description": "Stunning architectural exteriors that make a lasting impression",
+      "projects": [
+        {
+          "id": 1,
+          "title": "Modern Villa",
+          "image": "/assets/images/portfolio/exterior (1).jpg",
+          "category": "Residential"
+        },
+        {
+          "id": 2,
+          "title": "Commercial Complex",
+          "image": "/assets/images/portfolio/exterior (2).jpg",
+          "category": "Commercial"
+        },
+        {
+          "id": 3,
+          "title": "Urban Tower",
+          "image": "/assets/images/portfolio/exterior (3).jpg",
+          "category": "High-rise"
+        }
+      ]
+    },
+    {
+      "id": "interior",
+      "title": "Interior Design",
+      "description": "Elegant interior spaces that inspire and delight",
+      "projects": [
+        {
+          "id": 1,
+          "title": "Luxury Apartment",
+          "image": "/assets/images/portfolio/interior (1).jpg",
+          "category": "Residential"
+        },
+        {
+          "id": 2,
+          "title": "Office Space",
+          "image": "/assets/images/portfolio/interior (2).jpg",
+          "category": "Commercial"
+        },
+        {
+          "id": 3,
+          "title": "Hotel Lobby",
+          "image": "/assets/images/portfolio/interior (3).jpg",
+          "category": "Hospitality"
+        }
+      ]
+    }
+  ]
+}
