@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { FaGraduationCap, FaLaptopCode, FaUsers, FaClock, FaPlay, FaCalendarAlt, FaChartLine } from 'react-icons/fa';
 import { BsBoxArrowUpRight  } from "react-icons/bs";
+
 import mattSchoolData from '../../dataJson/mattSchool.json';
+import HeaderText from '../ui/HeaderText';
 
 const OurCourses = () => {
   const [activeVideo, setActiveVideo] = useState(mattSchoolData.videos.mattSchool1);
@@ -14,17 +16,18 @@ const OurCourses = () => {
   };
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-black font-raleway">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">{mattSchoolData.header.title}</h2>
-          <p className="text-gray-400 max-w-3xl mx-auto">{mattSchoolData.header.description}</p>
+          <HeaderText header={mattSchoolData.header.title} />
+       
+          <p className="text-gray-400 text-xl max-w-2xl mx-auto">{mattSchoolData.header.description}</p>
         </div>
 
         {/* Video Gallery */}
         <div className="mb-20">
-          <div className="relative rounded-2xl overflow-hidden group mb-6">
+          <div className="relative rounded overflow-hidden group mb-6">
             <video 
               className="w-full h-[700px] object-contain bg-black"
               autoPlay
@@ -69,7 +72,7 @@ const OurCourses = () => {
               <button
                 key={key}
                 onClick={() => setActiveVideo(src)}
-                className={`relative     rounded-lg overflow-hidden aspect-video ${activeVideo === src ? 'ring-2 ring-primary' : ''}`}
+                className={`relative  rounded  overflow-hidden aspect-video ${activeVideo === src ? 'ring-2 ring-primary/50' : ''}`}
               >
                 <video 
                   src={src}
@@ -89,10 +92,12 @@ const OurCourses = () => {
           {mattSchoolData.features.map(feature => {
             const Icon = icons[feature.icon];
             return (
-              <div key={feature.id} className="bg-white/5 p-8 rounded-xl hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-2">
-                <Icon className="text-primary w-12 h-12 mb-6" />
-                <h4 className="text-xl font-bold text-white mb-4">{feature.title}</h4>
-                <p className="text-gray-400">{feature.description}</p>
+              <div key={feature.id} className="bg-gradient-to-br from-white/10 to-white/5 p-8 rounded hover:bg-white/15 transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl hover:shadow-primary/20 backdrop-blur-sm border border-white/10">
+                <div className="bg-gradient-to-br from-primary/20 to-primary/10 rounded p-4 mb-6 w-fit">
+                  <Icon className="text-primary w-12 h-12 transform hover:scale-110 transition-transform duration-300" />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-4 bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">{feature.title}</h4>
+                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
               </div>
             );
           })}
@@ -100,25 +105,24 @@ const OurCourses = () => {
 
         {/* Courses */}
         <div>
-          <h3 className="text-3xl font-bold text-white mb-10 text-center">Available Courses</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <HeaderText header={["Available Courses"]} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-sans">
             {mattSchoolData.courses.map(course => (
-              <div key={course.id} className="bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-all duration-300">
-                <h4 className="text-2xl font-bold text-white mb-4">{course.title}</h4>
-                <div className="flex items-center space-x-4 mb-4 text-gray-400">
-                  <div className="flex items-center">
-                    <FaCalendarAlt className="w-4 h-4 mr-2" />
+              <div key={course.id} className="bg-gradient-to-br from-white/10 to-white/5 rounded p-8 hover:bg-white/15 transition-all duration-500 group backdrop-blur-sm border border-white/10 hover:shadow-2xl hover:shadow-primary/20">
+                
+                <h4 className="text-2xl font-bold text-white mb-6 bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">{course.title}</h4>
+                <div className="flex items-center space-x-6 mb-6 text-gray-400">
+                  <div className="flex items-center bg-white/5 px-4 py-2 rounded-full">
+                    <FaCalendarAlt className="w-5 h-5 mr-2 text-primary" />
                     {course.duration}
                   </div>
-                  <div className="flex items-center">
-                    <FaChartLine className="w-4 h-4 mr-2" />
+                  <div className="flex items-center bg-white/5 px-4 py-2 rounded-full">
+                    <FaChartLine className="w-5 h-5 mr-2 text-primary" />
                     {course.level}
                   </div>
                 </div>
-                <p className="text-gray-400 mb-6">{course.description}</p>
-                <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/80 transition-colors duration-300">
-                  Learn More
-                </button>
+                <p className="text-gray-400 mb-8 leading-relaxed">{course.description}</p>
+           
               </div>
             ))}
           </div>

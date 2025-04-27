@@ -1,0 +1,14 @@
+{
+  "headerModel": "tower-darco-webp-128.glb",
+  "header": {
+    "title": "We Provide You The Best Experience.",
+    "mainTitle": "Architecture",
+    "description": "We are committed to impeccable craftsmanship and luxury reflected in all we do. We offer span furniture.",
+    "services": ["Architecture", "Interior Design", "3D Design"],
+    "features": [
+      "Quality and design checks deeply",
+      "Periodic site review and timelines",
+      "Design development and strategy"
+    ]
+  }
+}

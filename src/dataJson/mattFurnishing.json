@@ -1,0 +1,64 @@
+{
+  "header": {
+    "title": "Matt Furnishing",
+    "description": "The part of Mat Company that works on the supply and manufacture of household appliances by importing from abroad and supplying domestically. Through the experienced and professional staff of the company. Matt Furnishing works to create a comfortable and convenient life for families by building their home with attractive quality and design."
+  },
+  "videos": {
+    "mattFurnishing1": "/assets/videos/mattFurnishing/mattFurnishing1.MP4",
+    "mattFurnishing2": "/assets/videos/mattFurnishing/mattFurnishing2.MP4",
+    "mattFurnishing3": "/assets/videos/mattFurnishing/mattFurnishing3.MP4",
+    "mattFurnishing4": "/assets/videos/mattFurnishing/mattFurnishing4.MP4",
+    "mattFurnishing5": "/assets/videos/mattFurnishing/mattFurnishing5.MP4",
+    "mattFurnishing6": "/assets/videos/mattFurnishing/mattFurnishing6.MP4",
+    "mattFurnishing8": "/assets/videos/mattFurnishing/mattFurnishing8.MP4",
+    "mattFurnishing9": "/assets/videos/mattFurnishing/mattFurnishing9.MP4",
+    "mattFurnishing10": "/assets/videos/mattFurnishing/mattFurnishing10.MP4",
+    "mattFurnishing11": "/assets/videos/mattFurnishing/mattFurnishingBG.MP4"
+  },
+  "features": [
+    {
+      "id": 1,
+      "icon": "quality",
+      "title": "Quality Products",
+      "description": "Premium household appliances imported from trusted international manufacturers"
+    },
+    {
+      "id": 2,
+      "icon": "design",
+      "title": "Modern Design",
+      "description": "Contemporary and stylish designs that enhance your living space"
+    },
+    {
+      "id": 3,
+      "icon": "support",
+      "title": "Expert Support",
+      "description": "Professional staff providing guidance and after-sales support"
+    },
+    {
+      "id": 4,
+      "icon": "delivery",
+      "title": "Fast Delivery",
+      "description": "Efficient delivery and installation services across Iraq"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Kitchen Appliances",
+      "category": "Premium",
+      "description": "High-end kitchen appliances from renowned international brands"
+    },
+    {
+      "id": 2,
+      "title": "Home Furniture",
+      "category": "Custom",
+      "description": "Customizable furniture solutions for modern living spaces"
+    },
+    {
+      "id": 3,
+      "title": "Smart Home Systems",
+      "category": "Innovation",
+      "description": "Advanced home automation and smart appliance solutions"
+    }
+  ]
+}
