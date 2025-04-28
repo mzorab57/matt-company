@@ -44,6 +44,7 @@ const MenuItem = ({ item }) => {
             {item.children.map((child) => (
               <li key={child.key}>
                 <Link
+                onClick={() => window.scrollTo(0, 0)}
                   to={child.link}
                   className="block px-6 py-3 text-sm hover:text-primary hover:bg-white/5 transition-all duration-300 first:rounded-t-xl last:rounded-b-xl"
                 >
@@ -58,9 +59,10 @@ const MenuItem = ({ item }) => {
       ) : (
         <Link 
           to={item.link} 
+          onClick={() => window.scrollTo(0, 0)}
           className="block px-4 hover:text-primary transition-colors duration-300"
         >
-          {t(`nav.${item.title.toLowerCase()}`)}
+          {t(`${item.title}`)}
         </Link>
       )}
     </li>

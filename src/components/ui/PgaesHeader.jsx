@@ -8,7 +8,7 @@ const PgaesHeader = ({img, title}) => {
         <img
           src={img}
           alt="background"
-          className=" object-cover  brightness-50  h-screen w-full"
+          className=" object-cover  brightness-75  h-screen w-full"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-t from-black/40 via-transparent to-transparent">
           {/* <h2 className="text-3xl lg:text-4xl text-white  font-jost">

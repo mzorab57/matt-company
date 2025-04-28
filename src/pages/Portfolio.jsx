@@ -6,8 +6,8 @@ const Portfolio = () => {
   return (
     <>
       <PgaesHeader 
+        img={"/assets/images/portfolio/exterior/exterior (15).jpg"} // Fix image path
         title="Portfolio" 
-        img={"/assets/images/portfolio/interior (2).jpg"} // Fix image path
       />
       <Projects />
     </>
