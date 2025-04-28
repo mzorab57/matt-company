@@ -37,7 +37,7 @@ const OurCourses = () => {
               controlsList="nodownload"
             //   controls
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 right-0 ">
               <div className="flex flex-col lg:flex-row items-start space-x-4">
                 <button 

@@ -16,6 +16,18 @@ const MenuItem = ({ item }) => {
     });
   }, []);
 
+  const handleClick = (e) => {
+    if (item.title === "Contact") {
+      e.preventDefault();
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <li className="font-raleway font-medium group py-5 relative h-full">
       {item.children ? (
@@ -59,7 +71,7 @@ const MenuItem = ({ item }) => {
       ) : (
         <Link 
           to={item.link} 
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={handleClick}  // Changed this line from window.scrollTo to handleClick
           className="block px-4 hover:text-primary transition-colors duration-300"
         >
           {t(`${item.title}`)}

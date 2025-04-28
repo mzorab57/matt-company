@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
 import MenuItem from "./components/MenuItem";
 import MobileMenuItem from "./components/MobileMenuItem";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import navitemlist from "../../dataJson/navitemlist.json";
+import ContactInfo from "./components/ContactInfo";
 
 const Navbar = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  }, []);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
 
@@ -24,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/matt-logo.webp" alt="Logo" className="w-20   -translate-y-" />
+            <img src="/matt-logo.webp" alt="Logo" className="w-24     scale-150   -translate-y-" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,7 +48,7 @@ const Navbar = () => {
 
           <div className="flex">
             {/* langyage Info */}
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
 
             {/* Mobile Menu Button */}
             <button
@@ -74,7 +83,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-20">
+          <nav className="md:hidden py-10 backdrop-blur-2xl " data-aos="fade-down">
             <ul className="space-y-2">
               {navitemlist.map((item, index) => (
                 <MobileMenuItem
@@ -88,6 +97,9 @@ const Navbar = () => {
               {/* <li className="px-4 py-3 text-black bg-red-300">
                 <LanguageSwitcher  />
               </li> */}
+              <li>
+              <ContactInfo />
+              </li>
             </ul>
           </nav>
         )}
