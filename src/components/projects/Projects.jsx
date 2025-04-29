@@ -61,6 +61,7 @@ const Projects = () => {
                                         src={`/assets/images/portfolio/${category.id}/${category.id} (${index + 1}).jpg`}
                                         alt={`${category.title} ${index + 1}`}
                                         loading="lazy"
+                                        
                                         className="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110"
                                         onError={(e) => {
                                             e.target.parentElement.style.display = 'none';

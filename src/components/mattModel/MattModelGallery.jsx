@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import mattModelData from '../../dataJson/mattModel.json';
 import HeaderText from '../ui/HeaderText';
 
@@ -6,11 +6,8 @@ const MattModelGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="py-10 md:py-20 bg-gradient-to-b from-black to-gray-900">
-      {/* Background Effects */}
-      <div className="w-48 h-48 md:w-72 md:h-72 bg-primary/15 rounded-full blur-3xl animate-pulse absolute end-0"></div>
-      <div className="w-64 h-64 md:w-96 md:h-96 bg-primary/15 rounded-full blur-3xl animate-pulse absolute start-20"></div>
-
+    <div className="py-10  ">
+    
       <div className="container mx-auto px-4 sm:px-6 relative">
         {/* Gallery Header */}
         <div className="mb-8 md:mb-16">
@@ -32,7 +29,11 @@ const MattModelGallery = () => {
               <img
                 src={image.src}
                 alt={image.title}
+                loading="lazy"
+                decoding="async"
                 className="w-full aspect-square object-cover transform transition-transform duration-500 group-hover:scale-110"
+                width="400"
+                height="400"
               />
               
               {/* Overlay */}
@@ -44,16 +45,16 @@ const MattModelGallery = () => {
                 </div>
               </div>
 
-              {/* Decorative corners */}
+              {/* Decorative corners
               <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary/80"></div>
               <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-primary/80"></div>
               <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-primary/80"></div>
-              <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary/80"></div>
+              <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary/80"></div> */}
             </div>
           ))}
         </div>
 
-        {/* Modal for enlarged image */}
+        {/* Modal with optimized image loading */}
         {selectedImage && (
           <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-2 sm:p-4"
@@ -66,11 +67,15 @@ const MattModelGallery = () => {
               >
                 Close ×
               </button>
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.title}
-                className="w-full h-auto"
-              />
+              <Suspense fallback={<div className="text-white text-center">Loading...</div>}>
+                <img
+                  src={selectedImage.src}
+                  alt={selectedImage.title}
+                  className="w-full h-auto"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </Suspense>
               <p className="text-white text-center mt-2 sm:mt-4 text-base sm:text-lg md:text-xl">
                 {selectedImage.title}
               </p>

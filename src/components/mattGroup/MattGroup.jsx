@@ -41,22 +41,25 @@ const MattGroup = () => {
             division.name === "Matt Furnishing" ? "lg:flex-row-reverse" : ""
           }`}>
             {/* Video Section */}
-            <div className="lg:w-1/2 relative  ">
-              <div className="relative overflow-hidden border-4 border-white/20  ">
+            <div className="lg:w-1/2 relative">
+              <div className="relative overflow-hidden border-4 border-white/20">
                 <video 
-                  className=" max-w-full w-screen h-[400px] object-cover "
+                  className="max-w-full w-screen h-[400px] object-cover"
                   autoPlay
-                  preload='auto'
+                  preload="auto"
                   muted
                   loop
                   playsInline
+                  // Added playsinline attribute without capital I for better iOS compatibility
+                  webkit-playsinline="true"
+                  // Added controls as fallback for iOS
+                  controls
                 >
                   <source src={division.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div className="absolute inset-0 bg-black/20"></div>
               </div>
-             
             </div>
 
             {/* Content Section remains unchanged */}

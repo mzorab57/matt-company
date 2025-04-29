@@ -4,15 +4,38 @@
     "description": "The first architecture school in Iraq, providing professional courses in architectural design, modeling, and advanced software training."
   },
   "videos": {
-    "mattSchool1": "/assets/videos/mattSchool/mattschoolvideo1.MP4",
-    "mattSchool2": "/assets/videos/mattSchool/mattschoolvideo2.MP4",
-    "mattSchool3": "/assets/videos/mattSchool/mattschoolvideo3.MP4",
-    "mattSchool4": "/assets/videos/mattSchool/mattschoolvideo4.MP4",
-    "mattSchool5": "/assets/videos/mattSchool/mattschoolvideo5.MP4",
-    "mattSchool6": "/assets/videos/mattSchool/mattschoolvideo6.MP4",
-    "mattSchool7": "/assets/videos/mattSchool/mattschoolvideo7.MP4",
-    "mattSchool8": "/assets/videos/mattSchool/mattschoolvideo8.MP4"
-
+    "mattSchool1": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo1.MP4",
+      "poster": "/assets/images/poster/mattS1.JPG"
+    },
+    "mattSchool2": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo2.MP4",
+      "poster": "/assets/images/poster/mattS2.JPG"
+    },
+    "mattSchool3": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo3.MP4",
+      "poster": "/assets/images/poster/mattS3.JPG"
+    },
+    "mattSchool4": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo4.MP4",
+      "poster": "/assets/images/poster/mattS4.JPG"
+    },
+    "mattSchool5": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo5.MP4",
+      "poster": "/assets/images/poster/mattS5.JPG"
+    },
+    "mattSchool6": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo6.MP4",
+      "poster": "/assets/images/poster/mattS6.JPG"
+    },
+    "mattSchool7": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo7.MP4",
+      "poster": "/assets/images/poster/mattS7.JPG"
+    },
+    "mattSchool8": {
+      "video": "/assets/videos/mattSchool/mattschoolvideo8.MP4",
+      "poster": "/assets/images/poster/matt8.JPG"
+    }
   },
   "features": [
     {

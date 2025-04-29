@@ -1,21 +1,27 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import Main from "../components/layout/Main";
 
-// Pages
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
-import MattSchool from "../pages/pages/MattSchool";
-import MattFurnishing from "../pages/pages/MattFurnishing";
-import MattModel from "../pages/pages/MattModel";
-import Service from "../pages/Service";
-import OurSkills from "../pages/OurSkills";
-import Experience from "../pages/pages/Experience";
-import OurCollection from "../pages/pages/OurCollection";
-import AboutUs from "../components/aboutUs/AboutUs";
-import Company from "../pages/Company";
-import Portfolio from "../pages/Portfolio";
+// Lazy loaded components
+const Main = lazy(() => import("../components/layout/Main"));
+const Home = lazy(() => import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
+const MattSchool = lazy(() => import("../pages/pages/MattSchool"));
+const MattFurnishing = lazy(() => import("../pages/pages/MattFurnishing"));
+const MattModel = lazy(() => import("../pages/pages/MattModel"));
+const Service = lazy(() => import("../pages/Service"));
+const OurSkills = lazy(() => import("../pages/OurSkills"));
+const Experience = lazy(() => import("../pages/pages/Experience"));
+const OurCollection = lazy(() => import("../pages/pages/OurCollection"));
+const AboutUs = lazy(() => import("../components/aboutUs/AboutUs"));
+const Company = lazy(() => import("../pages/Company"));
+const Portfolio = lazy(() => import("../pages/Portfolio"));
+
+// Loading component
+const LoadingSpinner = () => (
+  <div className="min-h-screen flex items-center justify-center bg-black z-50">
+    <div className="animate-spin rounded-full h-16 w-16 border-4 border-t-blue-500 border-blue-200"></div>
+  </div>
+);
 
 const ErrorElement = () => (
   <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -37,24 +43,70 @@ const ErrorElement = () => (
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main />}>
+      <Route
+        path="/"
+        element={
+          <Suspense fallback={<LoadingSpinner />}>
+            <Main />
+          </Suspense>
+        }
+      >
         <Route
           index
           element={
-            <>
-              <Home /> <AboutUs /> <Service /> <OurSkills /> <Experience />
-              <Company /> <OurCollection />
-            </>
+            <Suspense fallback={<LoadingSpinner />}>
+              <Home />
+              <AboutUs />
+              <Service />
+              <OurSkills />
+              <Experience />
+              <Company />
+              <OurCollection />
+            </Suspense>
           }
         />
-        <Route path="about" element={<About />} />
-          <Route path="portfolio" element={<Portfolio />} /> {/* Move outside mattcompany */}
-          <Route path="mattcompany">
-            <Route path="mattschool" element={<MattSchool />} />
-            <Route path="mattfurnishing" element={<MattFurnishing />} />
-            <Route path="mattmodel" element={<MattModel />} />
-          </Route>
-        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route
+          path="about"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="portfolio"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <Portfolio />
+            </Suspense>
+          }
+        />
+        <Route path="mattcompany">
+          <Route
+            path="mattschool"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <MattSchool />
+              </Suspense>
+            }
+          />
+          <Route
+            path="mattfurnishing"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <MattFurnishing />
+              </Suspense>
+            }
+          />
+          <Route
+            path="mattmodel"
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <MattModel />
+              </Suspense>
+            }
+          />
+        </Route>
       </Route>
       <Route path="*" element={<ErrorElement />} />
     </Routes>

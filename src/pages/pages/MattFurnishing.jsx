@@ -4,7 +4,7 @@ import OurProducts from "../../components/mattFurnishing/OurProducts";
 const MattFurnishing = () => {
   return (
     <div className="Matt Furnishing">
-      <PgaesHeader img={'/assets/images/mattFurnishing/bgFurnishing.jpg'} title={'Matt Furnishing'} />
+      <PgaesHeader img={'/assets/images/portfolio/interior/interior (62).jpg'} title={'Matt Furnishing'} />
       <OurProducts />
     </div>
   );

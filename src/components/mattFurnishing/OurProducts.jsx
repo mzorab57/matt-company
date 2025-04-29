@@ -19,7 +19,7 @@ const OurProducts = () => {
     <section className="py-20 bg-black">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="lg:text-center mb-16">
             <HeaderText   header={mattFurnishingData.header.title} />
           <p className="text-gray-400 font-raleway text-lg max-w-4xl mx-auto leading-relaxed">{mattFurnishingData.header.description}</p>
         </div>
@@ -66,19 +66,19 @@ const OurProducts = () => {
           
           {/* Video Thumbnails */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {Object.entries(mattFurnishingData.videos).map(([key, src]) => (
+            {Object.entries(mattFurnishingData.videos).map(([key, data]) => (
               <button
                 key={key}
-                onClick={() => setActiveVideo(src)}
-                className={`relative rounded overflow-hidden aspect-video ${activeVideo === src ? 'ring-2 ring-danger' : ''}`}
+                onClick={() => setActiveVideo(data.video)}
+                className={`relative rounded overflow-hidden aspect-video ${activeVideo === data.video ? 'ring-2 ring-danger/50' : ''}`}
               >
-                <video 
-                  src={src}
-                  className="w-full h-full object-cover bg-black"
-                  muted
+                <img
+                  src={data.poster}
+                  alt={`Video thumbnail ${key}`}
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                  <FaPlay className={`w-8 h-8 ${activeVideo === src ? 'text-danger' : 'text-white'}`} />
+                  <FaPlay className={`size-6 ${activeVideo === data.video ? 'text-danger' : 'text-white'}`} />
                 </div>
               </button>
             ))}

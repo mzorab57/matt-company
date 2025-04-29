@@ -53,7 +53,10 @@ const MobileMenuItem = ({
                   <Link
                     to={child.link}
                     className="block px-8 py-2 text-gray-200 hover:text-primary"
-                    onClick={handleClick}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                      onClose();
+                    }}
                   >
                     {child.title}
                   </Link>

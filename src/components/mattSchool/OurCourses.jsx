@@ -6,7 +6,7 @@ import mattSchoolData from '../../dataJson/mattSchool.json';
 import HeaderText from '../ui/HeaderText';
 
 const OurCourses = () => {
-  const [activeVideo, setActiveVideo] = useState(mattSchoolData.videos.mattSchool1);
+  const [activeVideo, setActiveVideo] = useState(mattSchoolData.videos.mattSchool1.video);
   
   const icons = {
     graduation: FaGraduationCap,
@@ -67,19 +67,19 @@ const OurCourses = () => {
           
           {/* Video Thumbnails */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {Object.entries(mattSchoolData.videos).map(([key, src]) => (
+            {Object.entries(mattSchoolData.videos).map(([key, data]) => (
               <button
                 key={key}
-                onClick={() => setActiveVideo(src)}
-                className={`relative  rounded  overflow-hidden aspect-video ${activeVideo === src ? 'ring-2 ring-primary/50' : ''}`}
+                onClick={() => setActiveVideo(data.video)}
+                className={`relative rounded overflow-hidden aspect-video ${activeVideo === data.video ? 'ring-2 ring-primary/50' : ''}`}
               >
-                <video 
-                  src={src}
-                  className="w-full h-full object-cover bg-black"
-                  muted
+                <img
+                  src={data.poster}
+                  alt={`Video thumbnail ${key}`}
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                  <FaPlay className={`size-6 ${activeVideo === src ? 'text-primary' : 'text-white'}`} />
+                  <FaPlay className={`size-6 ${activeVideo === data.video ? 'text-primary' : 'text-white'}`} />
                 </div>
               </button>
             ))}

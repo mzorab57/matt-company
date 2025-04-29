@@ -4,16 +4,47 @@
     "description": "The part of Mat Company that works on the supply and manufacture of household appliances by importing from abroad and supplying domestically. Through the experienced and professional staff of the company. Matt Furnishing works to create a comfortable and convenient life for families by building their home with attractive quality and design."
   },
   "videos": {
-    "mattFurnishing1": "/assets/videos/mattFurnishing/mattFurnishing1.MP4",
-    "mattFurnishing2": "/assets/videos/mattFurnishing/mattFurnishing2.MP4",
-    "mattFurnishing3": "/assets/videos/mattFurnishing/mattFurnishing3.MP4",
-    "mattFurnishing4": "/assets/videos/mattFurnishing/mattFurnishing4.MP4",
-    "mattFurnishing5": "/assets/videos/mattFurnishing/mattFurnishing5.MP4",
-    "mattFurnishing6": "/assets/videos/mattFurnishing/mattFurnishing6.MP4",
-    "mattFurnishing8": "/assets/videos/mattFurnishing/mattFurnishing8.MP4",
-    "mattFurnishing9": "/assets/videos/mattFurnishing/mattFurnishing9.MP4",
-    "mattFurnishing10": "/assets/videos/mattFurnishing/mattFurnishing10.MP4",
-    "mattFurnishing11": "/assets/videos/mattFurnishing/mattFurnishingBG.MP4"
+    "mattSchool1": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing1.MP4",
+      "poster": "/assets/images/poster/mattF1.JPG"
+    },
+    "mattSchool2": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing2.MP4",
+      "poster": "/assets/images/poster/mattF2.JPG"
+    },
+    "mattSchool3": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing3.MP4",
+      "poster": "/assets/images/poster/mattF3.JPG"
+    },
+    "mattSchool4": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing4.MP4",
+      "poster": "/assets/images/poster/mattF4.JPG"
+    },
+    "mattSchool5": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing5.MP4",
+      "poster": "/assets/images/poster/mattF5.JPG"
+    },
+    "mattSchool6": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing6.MP4",
+      "poster": "/assets/images/poster/mattF6.JPG"
+    },
+    "mattSchool7": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing7.MP4",
+      "poster": "/assets/images/poster/mattF7.JPG"
+    },
+    "mattSchool8": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing8.MP4",
+      "poster": "/assets/images/poster/mattF8.JPG"
+    },
+    "mattSchool9": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing9.MP4",
+      "poster": "/assets/images/poster/mattF9.JPG"
+    },
+    "mattSchool10": {
+      "video": "/assets/videos/mattFurnishing/mattFurnishing10.MP4",
+      "poster": "/assets/images/poster/mattF10.JPG"
+    }
+  
   },
   "features": [
     {

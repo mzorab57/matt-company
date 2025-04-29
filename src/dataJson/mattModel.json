@@ -35,51 +35,51 @@
     "images": [
       {
         "id": 1,
-        "src": "/assets/images/mattModel/model1.webp",
+        "src": "/assets/images/mattModel/model1.jpg",
         "title": "Modern Residential Tower"
       },
      
   
       {
         "id": 4,
-        "src": "/assets/images/mattModel/model9.webp",
+        "src": "/assets/images/mattModel/model9.jpg",
         "title": "Luxury Apartments"
       },
       {
         "id": 5,
-        "src": "/assets/images/mattModel/model5.webp",
+        "src": "/assets/images/mattModel/model5.jpg",
         "title": "Industrial Tower"
       },
       
       {
         "id": 3,
-        "src": "/assets/images/mattModel/model3.webp",
+        "src": "/assets/images/mattModel/model3.jpg",
         "title": "Commercial Complex"
       },
       
       {
         "id": 6,
-        "src": "/assets/images/mattModel/model8.webp",
+        "src": "/assets/images/mattModel/model8.jpg",
         "title": "Office Building"
       },
       {
         "id": 2,
-        "src": "/assets/images/mattModel/model2.webp",
+        "src": "/assets/images/mattModel/model2.jpg",
         "title": "Commercial Complex"
       },
       {
         "id": 7,
-        "src": "/assets/images/mattModel/model7.webp",
+        "src": "/assets/images/mattModel/model7.jpg",
         "title": "Office Building"
       },
       {
         "id": 8,
-        "src": "/assets/images/mattModel/model10.webp",
+        "src": "/assets/images/mattModel/model10.jpg",
         "title": "Modern Residential Tower"
       },
       {
         "id": 9,
-        "src": "/assets/images/mattModel/model11.webp",
+        "src": "/assets/images/mattModel/model11.jpg",
         "title": "Modern Residential Tower"
       }
 

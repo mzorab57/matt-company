@@ -36,7 +36,7 @@ const MattModelBody = () => {
               <div className="mb-4 sm:mb-6 overflow-hidden relative">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
                 <img
-                  src={`/assets/images/mattModel/model${index + 1}.webp`}
+                  src={`/assets/images/mattModel/model${index + 1}.jpg`}
                   alt={section.title}
                   className="w-full h-32 sm:h-40 md:h-64 object-cover hover:scale-110 transition-transform duration-500"
                 />
